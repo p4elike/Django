@@ -39,5 +39,4 @@ def workdir_view(request):
     rez = os.listdir(path)
     for n in rez:
         list_work.append(f'{n}, ')
-
-    raise NotImplemented(list_work)
+    return HttpResponse(list_work)
